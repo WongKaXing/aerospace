@@ -37,7 +37,7 @@ on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
 automatically-unhide-macos-hidden-apps = false
 
 # 持久化工作区列表。这些工作区即使没有任何窗口、不可见，也会保持存活，不会被自动关闭。此配置项仅在 `config-version = 2` 时可用。如果省略，默认值为空数组。
-persistent-workspaces = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
+persistent-workspaces = ["0","1", "2", "3", "4", "5", "6", "7", "8", "9"]
 
 # A callback that runs every time binding mode changes
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
@@ -45,7 +45,7 @@ persistent-workspaces = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
 on-mode-changed = []
 
 # 是否启用"鼠标跟随焦点"——鼠标移动到哪个窗口，焦点就切换到那个窗口。
-focus-follows-mouse.enabled = false
+focus-follows-mouse.enabled = true
 
 # 键盘布局预设。
 # - `qwerty` — 标准 QWERTY 键盘
@@ -154,6 +154,7 @@ gaps.outer.right =      15   # 屏幕右侧外边距
     # alt-z = 'workspace Z'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
+    alt-shift-0 = 'move-node-to-workspace 0'
     alt-shift-1 = 'move-node-to-workspace 1'
     alt-shift-2 = 'move-node-to-workspace 2'
     alt-shift-3 = 'move-node-to-workspace 3'
