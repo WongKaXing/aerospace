@@ -5,7 +5,7 @@ config-version = 2
 after-startup-command = []
 
 # 是否在登录系统时自动启动 AeroSpace。
-start-at-login = true
+start-at-login = false
 
 # 当配置文件被保存时，是否自动重新加载配置。设置为 `true` 之后，需要手动重新加载一次，自动重载才会开始生效。
 auto-reload-config = false
